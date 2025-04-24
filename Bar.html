@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Button Bar</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f8f8;
+    }
+
+    .button-bar {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 20px;
+      background: #333;
+    }
+
+    .button-bar button {
+      background: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .button-bar button:hover {
+      background: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="button-bar">
+    <button onclick="handleClick('/AtAGlance.html')">At A Glance</button>
+    <button onclick="handleClick('The Data Mindset')">The Data Mindset</button>
+    <button onclick="handleClick('Dilemma')">Dilemma</button>
+    <button onclick="handleClick('Data')">Data</button>
+	<button onclick="handleClick('Insights')">Insights</button>
+	<button onclick="handleClick('Action')">Action</button>
+	<button onclick="handleClick('Community Profiles')">Community Profiles</button>
+	<button onclick="handleClick('Explorer')">Explorer</button>
+  </div>
+
+  <script>
+    function handleClick(name) {
+      alert(`You clicked: ${name}`);
+    }
+  </script>
+</body>
+</html>
